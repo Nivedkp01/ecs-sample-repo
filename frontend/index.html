@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Simple Frontend</h1>
+    <p id="msg"></p>
+
+<script>
+fetch("http://localhost:5000/")
+  .then(res => res.text())
+  .then(data => document.getElementById("msg").innerText = data);
+</script>
+
+</body>
+</html>
